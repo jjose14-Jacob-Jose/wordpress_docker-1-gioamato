@@ -48,3 +48,5 @@ wp-translation-downloader.lock
 .env
 *_bak
 .dccache
+
+clipboard.txt

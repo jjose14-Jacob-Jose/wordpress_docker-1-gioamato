@@ -44,3 +44,11 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+### Generating MySQL database dumps in Ubuntu
+Run in terminal to generate a snapshot/dump of database with name 'site3_db':
+```
+mysqldump -u username -p site3_db > /home/username/Documents/mecp/2-miscellaneous/1-MySQL_dumps/20240724/site3_db.sql
+
+<Enter password>
+```
