@@ -52,3 +52,12 @@ mysqldump -u username -p site3_db > /home/username/Documents/mecp/2-miscellaneou
 
 <Enter password>
 ```
+
+### Accessing contents of MySQL in Docker
+In Terminal:
+sudo docker exec -it docker_container_name mysql -u username_in_docker_compose -p
+```
+sudo docker exec -it stateless-wordpress_db mysql -u wordpress -p
+password: wordpress
+show databases;
+```

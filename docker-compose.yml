@@ -11,6 +11,8 @@ services:
     restart: always
     volumes:
       - db-data:/var/lib/mysql
+      - ./site1_db.sql:/docker-entrypoint-initdb.d/site1_db.sql # Mount the SQL file
+      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
       MYSQL_DATABASE: wordpress
